@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,600&display=swap');
+
+*{
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("images/Captura\ de\ Pantalla\ 2024-09-06\ a\ la\(s\)\ 13.28.01.png");
+    background-size: cover;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.nav{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,1), transparent);
+    z-index: 100;
+}
+
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 50;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+
+.btn:hover{
+    background: #e8e1e7b6;
+}
+
+
+#registerBtn{
+    margin-left: 15px;
+}
+
+.btn.whiteButton{
+    background: #e4cce08a;
+}
+
+.btn.btn.whiteButton:hover{
+    background: #e8e1e7b6;
+}
+
+.nav-menu-btn{
+    display: none;
+}
+
+.formBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.registerBox{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s, ease-in-out;
+}
+
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+}
+
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}

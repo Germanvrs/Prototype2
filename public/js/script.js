@@ -16,7 +16,7 @@ function registerUser() {
         .then(data => {
             if (data.success) {
                 alert('Registro exitoso!');
-                // Redireccionar o limpiar el formulario si es necesario
+
             } else {
                 alert('Error: ' + data.message);
             }

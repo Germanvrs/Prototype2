@@ -6,8 +6,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
-app.use(express.static('public')); 
-
+app.use(express.static('public'));
 
 mongoose.connect('mongodb+srv://0260679:German12@cluster1.tfg6v.mongodb.net/prototypes?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -16,11 +15,9 @@ mongoose.connect('mongodb+srv://0260679:German12@cluster1.tfg6v.mongodb.net/prot
 .then(() => console.log('Conectado a MongoDB'))
 .catch(err => console.error('Error de conexión a MongoDB:', err));
 
-
 app.get('/', (req, res) => {
     res.render('prototype');
 });
-
 
 app.post('/register', async (req, res) => {
     const { firstname, lastname, email, password } = req.body;
@@ -36,7 +33,6 @@ app.post('/register', async (req, res) => {
     }
 });
 
-
 app.get('/courses', (req, res) => {
     res.render('courses'); 
 });
@@ -48,7 +44,6 @@ app.get('/quizzes&exam', (req, res) => {
 app.get('/aboutus', (req, res) => {
     res.render('aboutus'); 
 });
-
 
 const PORT = process.env.PORT || 3000;
 
